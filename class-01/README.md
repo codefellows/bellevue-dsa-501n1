@@ -1,32 +1,83 @@
-**[code-501-dsa]  Data Structures and Algorithms Master Class**
-# 01 - Basic Data Structures
+![cf](http://i.imgur.com/7v5ASc8.png) 01: Basic Data Structures
+===
 
-**Topics Covered**
+## Learning Objectives
 	
- - Why algorithms matter
- - Computer science is a way of thinking, not things to know. 
- - Computer architecture
- - Layers of Abstraction
- - Complexity Analysis -- Big O notation
- - Data abstractions and assumptions
- - Formal definitions.
- - How do you improve running time?
- - Three-Sum problem
- - Delete duplicates
- - Basic data structures -- Arrays (fixed, re-sizable), String, Hash tables
- -  Pick 2\3 code challenges 
+* Why do algorithms matter?
+* Computer science is a way of thinking, not things to know. 
+* Students will learn computer architecture
+* Students will learn the Layers of Abstraction
+* Students will cover complexity analysis && big O notation
+* Students will learn data abstractions and assumptions
+* Students will learn formal definitions
+* Sudents will learn how to improve run time?
+* Students will go over Three-Sum problem
+* Students will learn how to delete duplicates
+* Students will learn basic data structures
  
- - Strings
-    - [what’s a word in what language :)] Length of last word
-    - Detect a palindrome
- - Hw: <<Phone number>>
- - Lists
- - Implement even-odd merge
- - Arrays
- - Print spiral traversal of 2D array
- - Sort array into a wave pattern
- - (homework) Merge intervals
- - Mock whiteboard -- Vishal & Brook{TBD} interview each other and demonstrate. -- Q: Find the smallest positive missing number in an array that contains both positive and negative integers
- - Whiteboard Q for students -- Implement Run-Length Encoding. 
+## Data Structures 
+
+* Strings
+    * [what’s a word in what language :)] length of last word
+    * palindrome
+* Lists
+* Arrays - contiguous [a, b, c, d]
+* Hash tables
+
+## Homework
+
+* Phone Number
+* Implement even-odd merge
+* Print spiral traversal of 2D array
+* Sort array into a wave pattern
+* Merge intervals
+
+## Whiteboarding
+
+* **Mock Whiteboard** - Vishal & Brook will interview each other and demonstrate a mock whiteboarding interview.
+    * **Question:** Find the smallest positive missing number in an array that contains both positive and negative integers
+
+* **Mock Whiteboard** - Students will do mock whiteboarding interviews 
+    * **Question:** Implement Run-Length Encoding 
 aaaabcccaa => 4a1b3c2a
 3e4f2e	=> eeeffffee
+
+### bubbleSort
+```javascript
+const bubbleSort = (a) => {
+    for(let i = 0; i < a.length; i++){ // N
+        for(let j = 0; j < a.length - i - 1; j++){ // N^2
+            if(a[j] > a[j + 1]){ // this if statement is constant
+                let temp = a[j];
+                a[j] = a[j +1];
+                a[j + 1] = temp;
+            }
+        }
+    }
+}
+// big O - O(n^2) because we have nested loops
+```
+### findMissing
+```javascript
+// given an array of integers
+// find the smallest positive missing integer
+// return the smallest positive missing integer
+// n^2 because given the size of array is 1,000,000 we need to go from 1 to 1,000,000 to see which is the smallest. 
+// how to improve time complexity
+// trade space for time
+// create an object to store each number
+```
+
+### removeDupes
+```javascript
+// remove dupes from array
+    // asks if all elements are the same type
+// all elements are of the same data type
+    // example input: [1, 2, 1, 3, 1, 5]
+    // example output: [1, 2, 3, 5]
+// asks if there are time / space constraints
+// constant space is ok ideally
+    // if you have to create new variables to keep track of state it can't grow with the number of items in the list
+// return an array with duplicates removed
+// mutate the array
+````
