@@ -57,27 +57,3 @@ const bubbleSort = (a) => {
 }
 // big O - O(n^2) because we have nested loops
 ```
-### findMissing
-```javascript
-// given an array of integers
-// find the smallest positive missing integer
-// return the smallest positive missing integer
-// n^2 because given the size of array is 1,000,000 we need to go from 1 to 1,000,000 to see which is the smallest. 
-// how to improve time complexity
-// trade space for time
-// create an object to store each number
-```
-
-### removeDupes
-```javascript
-// remove dupes from array
-    // asks if all elements are the same type
-// all elements are of the same data type
-    // example input: [1, 2, 1, 3, 1, 5]
-    // example output: [1, 2, 3, 5]
-// asks if there are time / space constraints
-// constant space is ok ideally
-    // if you have to create new variables to keep track of state it can't grow with the number of items in the list
-// return an array with duplicates removed
-// mutate the array
-````
