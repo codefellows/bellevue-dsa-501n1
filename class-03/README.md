@@ -15,7 +15,7 @@
    - Reverse a singly linked list 
    - Stacks
    - Compute Buildings with a sunset view
-Test a string over “{ } ( ) [ ]” for well formedness
+   - Test a string over “{ } ( ) [ ]” for well-formedness
  - Queues
     - Implement queue with stacks
     - Implement a queue with max api
